@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marion Saves</title>
+  <meta name="description" content="Elève en deuxième année d'école d'ingénieur à Télécom SudParis. En recherche d'un stage d'été dans le développement.">
+  <link rel="icon" type="image/x-icon" href="../../assets/MS.png">
+</head>
+
+<body>
+    <div class="content">
+        <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+            <div class="section presentation" id="accueil">
+                <div class="pres_parent">
+                    <div class="pres_enfant1">
+                        <img src="assets/moi.jpg" class="photo_moi" alt="Photo de Saves Marion">
+                    </div>
+                    <div class="pres_enfant2">
+                        <h2 class="travail">Software Engineer</h2>
+                    </div>
+                    <div class="pres_enfant3">
+                        <h1 class="moi">Marion<br/> Saves</h1>
+                    </div>
+                    <div class="pres_enfant4 hvr-grow hvr-grow-shadow btn-grad">
+                        <a href="mailto:marion.saves@telecom-sudparis.eu?subject=[Contact Saves Marion]" class="contact">
+                            <h4 class ="contact fr"> Me contacter </h4>
+                        </a>
+                    </div>
+                    <div class="footer mesliens">
+                        <a target="_blank" href="https://github.com/Saves-Marion">
+                            <img src="assets/Icones/git.png" class="logo hvr-skew" alt="GIT">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/marion-saves/">
+                            <img src="assets/Icones/linkedin.png" class="logo hvr-skew" alt="Linkedin">
+                        </a>
+                        <a href="mailto:marion.saves@telecom-sudparis.eu?subject=[Contact Saves Marion]">
+                            <img src="assets/Icones/email.png" class="logo hvr-skew" alt="Email">
+                        </a>
+                    </div>
+                    <div class="CV-neumorphisme">
+                        <p class="CV">Mon CV:</p>
+                        <a target="_blank" href="assets/CV/CV_SavesMarion.pdf" class="hvr-grow">FR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section quisuisje" id="presentation">
+                <br/><br/><br/><br/>
+                <h3 class="titrepartie">Qui suis-je ?</h3>
+                <br/><br/>
+                <p class="quisuisje_p">
+                    Elève en troisième année à <b>Télécom SudParis</b>, école membre de l’Institut Polytechnique de Paris et de l'Institut Mines Télécom.
+                    <br/><br/><br/>
+                    Je recherche un <b>stage d’été de fin d'étude d'une durée de 6 mois à partir de février</b>. 
+                    <br/><br/><br/>
+                    Je possède des connaissances en <b>développement</b> mais aussi des bases en <b>design</b>. J'ai aussi plusieurs expérience de <b>travail en équipe</b>
+                    <br/><br/><br/>
+                    J'ai pu acquérir ces compétences grâce à nos nombreux <b>projets</b> et mes <b>engagements associatifs</b>.
+                </p>
+            </div>
+
+            <div class="section projets" id="projets">
+                <h3 class="titrepartie">Mes projets</h3>
+                <carousel [cellsToShow]= "1" [loop]= "true" [height]="700">
+                    <div class="carousel-cell">
+                        <div>
+                            <img src="../../assets/Projets/COMEAT_accueil.png" alt="Projet COMEAT"/>
+                            <p class="text">
+                                Projet réalisé au cours de la première année à Télécom SudParis<br/> dans le cadre du projet informatique. <br/> Réalisé en collaboration avec deux autres élèves à l'aide de Django. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div>
+                            <img src="../../assets/Projets/MOB_categorie.PNG" alt="Projet MOB"/>
+                            <p class="text">
+                                Projet réalisé au cours de la première année à Télécom SudParis<br/> dans le cadre du projet GATE. <br/> Réalisé en collaboration avec cinq autres élèves à l'aide de Django. <br/>Notre projet portait sur la sensibilisation et la lutte contre le harcelement scolaire. 
+                            </p>
+                        </div>
+                    </div>
+                </carousel>
+            </div>
+
+            <div id="competences" class="section competences">
+                <h3 class="titrepartie">Mes compétences</h3>
+                <div class="competences_grille">
+                        <img src="assets/Compétences-Logos/Duo/A+JS.png" class="competences_logos" alt="Angular et JavaScript">
+                        <img src="assets/Compétences-Logos/Duo/CSS+HTML.png" class="competences_logos compe"  alt="HTML et CSS">
+                        <img src="assets/Compétences-Logos/Duo/P+Dj.png" class="competences_logos compe2"  alt="Python et Django">
+                        <img src="assets/Compétences-Logos/Duo/symfony+php.png" class="competences_logos compe"  alt="PHP et Symfony">
+                        <img src="assets/Compétences-Logos/Duo/Android+Studio.png" class="competences_logos" alt="Android Studio">
+                        <img src="assets/Compétences-Logos/figma.png" class="competences_logos compe2"  alt="Figma">
+                        <img src="assets/Compétences-Logos/docker.png" class="competences_logos docker"  alt="Docker">
+                        <img src="assets/Compétences-Logos/Duo/AEPRPS.png" class="competences_logos compe"  alt="Suite Adobe : photoshop, première pro et after effect">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
